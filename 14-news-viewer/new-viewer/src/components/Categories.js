@@ -53,7 +53,7 @@ const Categories = ({onSelect, category}) => {
     return (
         <CategoriesBlock>
             {categories.map(c => (
-                <Category key={c.name} active={category === c.name} onClick={() => onSelect(c.name)}>
+                <Category key={c.name} active={category === c.name} onClick={onSelect(c.name)}>
                     {c.text}
                 </Category>
             ))}
